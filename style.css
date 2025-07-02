@@ -1,0 +1,35 @@
+div , span{
+        color: red;
+      }
+
+/* Child Selector - direct child*/
+div>p{
+    background-color: aqua;
+}
+
+/* descendent selector */
+
+div p{
+    color: azure;
+}
+
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Psuedo Selectors */
+a:visited {
+    color: green;
+}
+
+a:hover{
+    background-color: brown;
+}
+
+
+/* Jahan jahan p apne parent ka first child h wahan wahan change apply hoga */
+p:first-child{
+    color: aqua;
+}
