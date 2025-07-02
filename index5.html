@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizing</title>
+    <style>
+      /* px is 196th of an inch */
+      /* vw is view port width */
+      html {
+        font-size: 12px;
+      }
+      .box {
+        border: 2px solid black;
+        /* width: 1260px; */
+        width: 80vw; /* This is view port width */
+        margin: auto;
+        height: 80vh; /* This is view port height */
+      }
+
+      .container {
+        border: 2px solid black;
+        /* width: 1260px; */
+        width: 80vw; /* This is view port width */
+        margin: auto;
+        height: 80vh; /* This is view port height */
+        font-size: 10px;
+      }
+      /* Jo p ke parent ka computed size h uska 2 times for below example i.e called em - m times parent element size */
+      /* Jitna root(html) ko milne wala tha size uska m times i.e called rem - m time root element size */
+      /* For mobile vmin is width and for desktop vmin is height */
+      /* min-width - Iska mtlb h minimum width or height itni required h max kch bhi ho skta h */
+      /* % width - parent ke utne % .Eg 50% toh parent tag ke 50% */
+      /* Agar width or margin obey krna h then prefer display:inline-block */
+      /* visibility:hidden tb use krte hain jb we want ki wo jagah bche rhe */
+      /* display:none me wo space bhi nhi dikhegi */
+      .container p {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is a box</div>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+        accusamus asperiores, tempora impedit nesciunt, illo perferendis labore
+        eligendi, rerum minus consequuntur! Corporis, cupiditate. Error sint vel
+        excepturi, eaque iusto culpa distinctio expedita soluta, debitis cumque
+        porro non id necessitatibus sunt. A, commodi! Reiciendis, impedit fuga,
+        perspiciatis rerum beatae natus possimus optio harum, pariatur et
+        reprehenderit dolore?
+      </p>
+    </div>
+  </body>
+</html>
