@@ -3,30 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML and CSS</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- External to be used when website is production grade website -->
-    <!-- Below is the example of Internal CSS - To be used when WEBPAGE IS SMALL -->
-    <!-- <style>
-      div , span{
-        color: red;
+    <title>Fonts</title>
+    <style>
+      h1 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+          text-transform: uppercase;
       }
-    </style> -->
+      p {
+        /* for below Franklin is first one and others are fallback fonts */
+        /* import to be written inside the style tag */
+        /* line height is the spacing between two lines in a paragraph */
+        /* letter spacing - space between letters */
+        /* htmlcolorcodes.com */
+        font-family: "Franklin Gothic Medium", "Arial Narrow", "Arial", "sans-serif";
+        font-style: italic;
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        text-decoration-thickness: 3px;
+        text-indent: 30px;
+      }
+
+      h1{
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+      }
+    </style>
   </head>
   <body>
-    <!-- Below style in heading is an example of inline CSS - Do NOT USE INLINE CSS-->
-    <h1 style="color:blueviolet;background-color: antiquewhite;">This is CSS Tutorial</h1>
-    <div>This is CSS practice</div>
-    <span>
-        I am good
-    </span>
-    <!-- Selectors -->
-     <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">Go to Google</a>
-
-     <!-- BOX MODEL -->
-      <!-- Agar box sizing border box nhi lgega toh uska height sirf content ka rhega aur agar box-sizing:border-box lgega then it will include border and padding -->
-       <!-- Margin include nhi hoti h in the calculation of height or width kyunki wo bahar hota h content se -->
-        <!-- MARGIN COLLAPSE -->
-         <!-- Agar do element ki margin overlap ho rhi hain toh jo bhi MAXIMUM margin h wo bs ek baar lgegi -->
+    <h1>Fonts</h1>
+    <p>Tutorial on Fonts</p>
   </body>
 </html>
