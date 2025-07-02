@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity</title>
+    <style>
+        /* Cascade algorithm is used to determine which one will be used*/
+        /* 1st rule - position and order is given priority - the last one is given priority if same type of selector is used */
+        /* Specificity - Inline Style>ID Selector> Class or Attributes>Element Selector>Universal Selector */
+        /* Browsers own styling is known as User Agent Stylesheet */
+        /* if !important is used then it becomes the highest priority */
+        
+      h1 {
+        color: aqua;
+      }
+      .yellow {
+        color: yellow !important;
+      }
+      .cred {
+        color: red;
+      }
+
+      .cpurple {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="yellow cred cpurple">CSS Specificity</h1>
+    </div>
+  </body>
+</html>
