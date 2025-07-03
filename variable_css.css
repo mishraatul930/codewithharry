@@ -1,0 +1,35 @@
+/* Variable - root */
+
+/* Global Variable */
+:root{
+    --color:blue;
+    --seccolor:rgb(138, 138, 219);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: var(--color);
+}
+
+.container{
+    background-color: var(--seccolor);
+}
+
+ul li{
+    list-style: none;
+    margin-left: 7px;
+}
+
+/* Local Variable */
+ul li:first-child{
+    --color:rgb(225, 154, 23);
+    background-color: var(--color);
+}
+
+ul{
+    display: flex;
+    padding: 10px;
+}
