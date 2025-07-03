@@ -50,6 +50,7 @@ p:first-child{
         conteny:"I am a good boy";
 }
 
+/*boxes ke andar, boxes ke main content ke baad koi content daalne ke liye use hota h  */
 .boxes::after{
         conteny:"I am a Atul";
 }
