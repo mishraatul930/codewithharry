@@ -33,7 +33,7 @@ a:hover{
 p:first-child{
     color: aqua;
 }
-
+/*BELOW ARE JUST CONCEPTS NOT RELATED TO THIS FILE  */
 /*boxes ke andar jitne elements hain sbko target krne ke liye  */
 .boxes *{
         border:2px solid red;
