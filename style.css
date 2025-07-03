@@ -49,3 +49,7 @@ p:first-child{
 .boxes::before{
         conteny:"I am a good boy";
 }
+
+.boxes::after{
+        conteny:"I am a Atul";
+}
