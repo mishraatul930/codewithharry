@@ -44,3 +44,8 @@ p:first-child{
 .boxes  :: first-line{
         color:yellow;
 }
+
+/*boxes ke andar, boxes ke main content ke pehle koi content daalne ke liye use hota h  */
+.boxes::before{
+        conteny:"I am a good boy";
+}
