@@ -30,6 +30,16 @@ ul li:first-child{
     background-color: var(--color, blue); 
 }
 
+@media only screen and (max-width: 455px){
+    body{
+        background-color: gray;
+    }
+}
+
+/* @media not|only mediatype and (expression){
+     css{}
+} */
+
 ul{
     display: flex;
     padding: 10px;
