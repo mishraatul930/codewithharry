@@ -26,7 +26,8 @@ ul li{
 /* Local Variable */
 ul li:first-child{
     --color:rgb(225, 154, 23);
-    background-color: var(--color);
+/*blue below is a fallback value, if the color variable is not present it will implement blue */
+    background-color: var(--color, blue); 
 }
 
 ul{
